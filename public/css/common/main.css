@@ -1,0 +1,67 @@
+body {
+  background-color: #F5F2F0;
+  font: 14px "Montserrat", Helvetica, Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
+h1, h5 {
+  font-family: 'Courgette', cursive;
+  text-shadow: 4px 1px 3px rgba(0, 0, 0, 0.2); }
+
+.toast {
+  font-weight: bold; }
+
+.dropdown-content li {
+  padding: 10px 2px;
+  background-color: #5E35B1; }
+  .dropdown-content li:hover {
+    background-color: #5E35B1;
+    opacity: 0.8; }
+  .dropdown-content li a {
+    padding: 10px; }
+.dropdown-content .btn-twitter {
+  background-color: #ECEFF1; }
+
+.nav-wrapper a span i {
+  height: 33px;
+  line-height: 33px; }
+.nav-wrapper .app-logo {
+  color: #FFF;
+  display: inline-block;
+  font-size: 2.1rem;
+  padding: 0;
+  white-space: nowrap; }
+
+.wrap-canvas {
+  width: 40%;
+  min-width: 300px;
+  margin: 20px auto; }
+  .wrap-canvas .vote-wrapper {
+    margin-top: 20px; }
+    .wrap-canvas .vote-wrapper .input-field label {
+      padding-left: 8px; }
+    .wrap-canvas .vote-wrapper .input-field button {
+      font-weight: bold;
+      height: 42px; }
+
+@media (max-width: 250px) {
+  .wrap-canvas {
+    min-width: 200px; } }
+.page-footer {
+  padding-top: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .page-footer a {
+    font-weight: bold; }
+
+@media (max-width: 700px) {
+  .footer-copyright {
+    text-align: center; } }
+
+/*# sourceMappingURL=main.css.map */

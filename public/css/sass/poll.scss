@@ -1,0 +1,23 @@
+.wrap-canvas{
+  width: 40%; 
+  min-width: 300px;
+  margin: 20px auto;
+  .vote-wrapper{
+    margin-top: 20px;
+    .input-field{
+      label{
+        padding-left: 8px;
+      }
+      button{
+        font-weight: bold;
+        height: 42px;
+      }
+    }
+  }
+}
+
+@media (max-width: 250px){
+  .wrap-canvas{
+    min-width: 200px;
+  }
+}

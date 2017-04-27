@@ -1,0 +1,22 @@
+<div class="wrap-canvas center-align">
+	<div id="canvas-holder" ng-init="$ctrl.showChart()">
+		<h1>Voting App</h1>
+		<h5>What is your favorite program language?</h5>
+	  <canvas id="chart-area" />
+	</div>
+	<div class="vote-wrapper">
+		<form name="voteForm" class="row" ng-submit="$ctrl.saveVote()">
+			<div class="col m2"></div>
+			<div class="input-field col s12 m6">
+				<label for="name" ng-hide="$ctrl.Poll._id.length > 0">Options</label>
+				<select id="name" class="browser-default hoverable" ng-model="$ctrl.Poll._id" material-select watch required>
+		      <option ng-repeat="Poll in $ctrl.Polls.data" value="{{ Poll._id }}">{{ Poll.name }}</option>
+		    </select>
+			</div>
+			<div class="input-field col s12 m2">
+				<button type="submit" class="waves-effect waves-light btn teal accent-3" ng-class="{'disabled': voteForm.$invalid}" ng-disabled="voteForm.$invalid">Vote</button>
+			</div>
+			<div class="col m2"></div>
+		</form>
+	</div>
+</div>

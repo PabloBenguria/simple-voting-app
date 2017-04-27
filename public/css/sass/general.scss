@@ -1,0 +1,20 @@
+body{
+  background-color: $background-color;
+  font: 14px "Montserrat", Helvetica, Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main{
+	flex: 1 0 auto;
+}
+
+h1, h5{
+  font-family: 'Courgette', cursive;
+  text-shadow: 4px 1px 3px rgba(0,0,0,0.2);
+}
+
+.toast{
+  font-weight: bold;
+}

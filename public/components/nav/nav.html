@@ -1,0 +1,30 @@
+<div class="navbar-fixed">
+  <nav class="deep-purple darken-1">
+    <div class="container">
+      <div class="nav-wrapper">
+        <ul class="left">
+          <li><a ui-sref="/" class="app-logo">Voting App</a></li>
+        </ul>
+        <ul class="right">
+          <li ng-hide="$ctrl.user.user.name.length > 0">
+            <a class="dropdown-button" href="#!" data-activates="login-dropdown">Sign in<i class="material-icons right">arrow_drop_down</i></a>
+          </li>
+          <li ng-show="$ctrl.user.user.name.length > 0">
+            <a class="chip dropdown-button" href="#!" data-activates="profile-dropdown">
+              <img src="{{$ctrl.user.user.photo}}" alt="Avatar">
+              <span>{{$ctrl.user.user.name}}<i class="material-icons right">arrow_drop_down</i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<ul id="login-dropdown" class="dropdown-content">
+  <va-login></va-login>
+</ul>
+
+<ul id="profile-dropdown" class="dropdown-content">
+  <li><a ng-click="$ctrl.logout()">Logout</a></li>
+</ul>
